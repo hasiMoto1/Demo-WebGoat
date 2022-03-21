@@ -17,7 +17,7 @@ jobs:
      -  name: Run Codacy Analysis CLI
         uses: codacy/codacy-analysis-cli-action@master
         with:
-          api-token: ${{ secrets.CODACYAPITOKEN }}
+          api-token: ${{ secrets.CODACY_API_TOKEN }}
           output: results.sarif
           format: sarif
           gh-code-scanning-compat: true
